@@ -23,8 +23,8 @@ jobs:
         role-duration-seconds: 1200
         role-session-name: DockerBuildSession
     - name: Login to Amazon ECR
-        id: login-ecr
-        uses: aws-actions/amazon-ecr-login@v1
+      id: login-ecr
+      uses: aws-actions/amazon-ecr-login@v1
 
     - name: Build, tag, and push docker image to Amazon ECR
         env:
